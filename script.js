@@ -1,4 +1,4 @@
-// ToxicApps Research Institute - Interactive JavaScript
+// Application Research Institute - Interactive JavaScript
 
 // Animated Statistics Counter
 function animateCounter(element, target, duration = 2000) {
