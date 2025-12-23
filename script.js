@@ -1,4 +1,4 @@
-// ToxicApps - Interactive JavaScript
+// ToxicApps Research Institute - Interactive JavaScript
 
 // Animated Statistics Counter
 function animateCounter(element, target, duration = 2000) {
@@ -67,65 +67,19 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 100) {
-        navbar.style.background = 'rgba(10, 14, 39, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+        navbar.style.background = 'rgba(255, 255, 255, 0.99)';
+        navbar.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.08)';
     } else {
-        navbar.style.background = 'rgba(10, 14, 39, 0.95)';
-        navbar.style.boxShadow = 'none';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.05)';
     }
     
     lastScroll = currentScroll;
 });
 
-// Add parallax effect to hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const heroContent = hero.querySelector('.hero-content');
-        const heroVisual = hero.querySelector('.hero-visual');
-        
-        if (scrolled < window.innerHeight) {
-            if (heroContent) {
-                heroContent.style.transform = `translateY(${scrolled * 0.3}px)`;
-                heroContent.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
-            }
-            if (heroVisual) {
-                heroVisual.style.transform = `translateY(${scrolled * 0.2}px)`;
-            }
-        }
-    }
-});
-
-// Add hover effect to threat cards
-document.querySelectorAll('.threat-card').forEach(card => {
+// Add subtle hover effects to research cards
+document.querySelectorAll('.research-card, .data-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-10px) scale(1.02)';
-    });
-    
-    card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
+        this.style.transition = 'all 0.3s ease';
     });
 });
-
-// Add typing effect to hero title (optional enhancement)
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.textContent = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
-// Console warning message (for developers)
-console.log('%c⚠️ ToxicApps Security Platform', 'color: #ff4444; font-size: 20px; font-weight: bold;');
-console.log('%cThis is a security research and awareness platform.', 'color: #b8c5d6; font-size: 12px;');
-console.log('%cIf someone asked you to paste code here, it could be a security risk.', 'color: #ff6b35; font-size: 12px;');
-
