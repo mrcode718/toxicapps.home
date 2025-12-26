@@ -1,25 +1,25 @@
-# ToxicApps - Security Awareness Platform
+# Applied Science Research Institute
 
-A modern, scientific-style landing page promoting security awareness for application users in today's digital world.
+A modern, scientific-style landing page for the Applied Science Research Institute, promoting research and understanding of application behaviors through scientific research and data analysis.
 
 ## 🌐 Live Site
 
-- **URL:** https://toxicapps.com
+- **URL:** https://appresearch.org
 - **GitHub Repository:** https://github.com/mrcode718/toxicapps.home
 
 ## 🎨 Features
 
-- Modern, scientific design with toxic/warning theme
+- Modern, scientific design with academic theme
 - Responsive layout for all devices
 - Animated statistics and interactive elements
 - Smooth scrolling navigation
-- Security-focused content and messaging
+- Research-focused content and messaging
 - SEO optimized
 
 ## 📁 Project Structure
 
 ```
-toxicapps/
+appresearch/
 ├── index.html          # Main HTML file
 ├── styles.css          # Stylesheet with modern design
 ├── script.js           # Interactive JavaScript
@@ -49,13 +49,13 @@ toxicapps/
 2. **Copy files to repository**:
    ```bash
    # If files are in a different location
-   cp -r /path/to/toxicapps/* .
+   cp -r /path/to/appresearch/* .
    ```
 
 3. **Add and commit files**:
    ```bash
    git add .
-   git commit -m "Initial commit: Add ToxicApps landing page"
+   git commit -m "Initial commit: Add Applied Science Research Institute landing page"
    ```
 
 4. **Push to GitHub**:
@@ -80,7 +80,7 @@ toxicapps/
 ### Configure Custom Domain
 
 1. In **Settings** → **Pages**, scroll to **Custom domain**
-2. Enter: `toxicapps.com`
+2. Enter: `appresearch.org`
 3. Click **Save**
 4. GitHub will create/update the `CNAME` file automatically
 
@@ -138,9 +138,9 @@ Follow the detailed instructions in [DNS_CONFIGURATION.md](./DNS_CONFIGURATION.m
 Edit CSS variables in `styles.css`:
 ```css
 :root {
-    --primary-toxic: #ff4444;
-    --secondary-toxic: #ff6b35;
-    --warning-yellow: #ffd700;
+    --primary-blue: #2563eb;
+    --secondary-blue: #3b82f6;
+    --accent-blue: #60a5fa;
     /* ... more colors ... */
 }
 ```
@@ -174,7 +174,7 @@ Edit CSS variables in `styles.css`:
 
 ## 📄 License
 
-This project is open source. Feel free to use and modify as needed.
+This project is open source. Free to use and modify as needed.
 
 ## 🤝 Contributing
 
@@ -192,13 +192,12 @@ For issues or questions:
 ## 🎯 Future Enhancements
 
 Potential features to add:
-- Blog section for security articles
-- App security scanner tool
-- User submission form for reporting toxic apps
-- API integration for real-time threat data
+- Blog section for research articles
+- Application analysis tools
+- User submission form for research collaboration
+- API integration for research data
 - Multi-language support
 
 ---
 
-**Built with ❤️ for security awareness**
-
+**Built with ❤️ for scientific research**

@@ -1,4 +1,4 @@
-// Application Research Institute - Interactive JavaScript
+// Applied Science Research Institute - Interactive JavaScript
 
 // Animated Statistics Counter
 function animateCounter(element, target, duration = 2000) {
