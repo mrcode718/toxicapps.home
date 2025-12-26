@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research Database Access - Application Research Institute">
+    <title>Research Database Access - Application Research Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) var(--spacing-md);
+            margin-top: 100px;
+        }
+        .page-content h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+        .page-content h2 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+        .page-content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-primary);
+        }
+        .page-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: var(--spacing-md);
+        }
+        .page-content ul {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: var(--spacing-md);
+            padding-left: var(--spacing-md);
+        }
+        .page-content li {
+            margin-bottom: var(--spacing-xs);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-lg);
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .info-box {
+            background: var(--bg-secondary);
+            border-left: 3px solid var(--primary-blue);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            border-radius: 4px;
+        }
+        .data-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+        }
+        .stat-card {
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            display: block;
+            margin-bottom: var(--spacing-xs);
+        }
+        .stat-card .label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <span class="logo-text">Application Research Institute</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="index.html#publications">Publications</a></li>
+                    <li><a href="index.html#data">Data</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="page-content">
+            <a href="index.html#data" class="back-link">← Back to Research Data & Tools</a>
+            
+            <h1>Research Database Access</h1>
+            <p>
+                The Application Research Institute maintains a comprehensive database of application analyses, 
+                behavioral studies, and research findings. Our database is available for academic and research 
+                purposes, supporting the scientific community in advancing understanding of application behaviors.
+            </p>
+
+            <div class="data-stats">
+                <div class="stat-card">
+                    <span class="number">2.3M</span>
+                    <span class="label">Applications Analyzed</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">500K+</span>
+                    <span class="label">Network Analyses</span>
+                </div>
+                <div class="stat-card">
+                    <span class="number">87%</span>
+                    <span class="label">Over-Permissioning Rate</span>
+                </div>
+            </div>
+
+            <h2>Database Contents</h2>
+            <p>Our research database includes:</p>
+            <ul>
+                <li><strong>Application Metadata:</strong> Comprehensive information about applications including categories, permissions, and basic characteristics</li>
+                <li><strong>Permission Analysis:</strong> Detailed analysis of permission requests and usage patterns</li>
+                <li><strong>Network Communication Data:</strong> Network traffic patterns, protocol usage, and communication endpoints</li>
+                <li><strong>Behavioral Studies:</strong> User behavior tracking mechanisms and data collection practices</li>
+                <li><strong>Research Findings:</strong> Aggregated results from our published and ongoing research</li>
+                <li><strong>Anonymized Survey Data:</strong> User awareness studies and privacy perception data</li>
+            </ul>
+
+            <h2>Access Requirements</h2>
+            <div class="info-box">
+                <p><strong>Academic and Research Use:</strong> Our database is primarily intended for academic research, educational purposes, and non-commercial scientific inquiry.</p>
+            </div>
+            
+            <h3>Eligibility</h3>
+            <p>Database access is available to:</p>
+            <ul>
+                <li>Researchers affiliated with academic institutions</li>
+                <li>Graduate students conducting research</li>
+                <li>Non-profit research organizations</li>
+                <li>Government research agencies</li>
+                <li>Other qualified researchers (case-by-case review)</li>
+            </ul>
+
+            <h3>Application Process</h3>
+            <p>To request database access, please provide:</p>
+            <ol>
+                <li><strong>Research Purpose:</strong> Clear description of your research objectives and how the data will be used</li>
+                <li><strong>Institutional Affiliation:</strong> Your academic or research institution</li>
+                <li><strong>Data Requirements:</strong> Specific datasets or data types needed for your research</li>
+                <li><strong>Ethical Approval:</strong> Confirmation of institutional review board approval (if applicable)</li>
+                <li><strong>Contact Information:</strong> Email address and institutional contact details</li>
+            </ol>
+
+            <h2>Data Access Request</h2>
+            <p>
+                Please send your data access request to <a href="mailto:research@toxicapps.com" style="color: var(--primary-blue);">research@toxicapps.com</a> 
+                with the subject line "Database Access Request" and include all required information listed above.
+            </p>
+
+            <h2>Data Usage Terms</h2>
+            <p>
+                All database users must comply with our <a href="data-usage-policy.html" style="color: var(--primary-blue);">Data Usage Policy</a>. 
+                Key requirements include:
+            </p>
+            <ul>
+                <li>Use data only for stated research purposes</li>
+                <li>Provide proper attribution in publications</li>
+                <li>Maintain data security and confidentiality</li>
+                <li>Do not attempt to re-identify anonymized data</li>
+                <li>Report any data security incidents</li>
+                <li>Comply with applicable privacy laws and regulations</li>
+            </ul>
+
+            <h2>Available Datasets</h2>
+            
+            <h3>Permission Analysis Dataset</h3>
+            <p>
+                Comprehensive analysis of permission requests across 2.3 million applications, including 
+                permission patterns, category correlations, and over-permissioning analysis.
+            </p>
+
+            <h3>Network Communication Dataset</h3>
+            <p>
+                Network traffic analysis data from 500,000+ applications, including protocol usage, 
+                encryption practices, and third-party communication patterns.
+            </p>
+
+            <h3>User Awareness Survey Data</h3>
+            <p>
+                Anonymized survey responses from 5,000+ participants regarding data collection awareness, 
+                privacy perceptions, and application usage patterns.
+            </p>
+
+            <h3>Application Behavior Dataset</h3>
+            <p>
+                Behavioral analysis data including tracking mechanisms, data collection practices, and 
+                user interaction patterns.
+            </p>
+
+            <h2>Data Formats</h2>
+            <p>Data is available in multiple formats:</p>
+            <ul>
+                <li><strong>CSV:</strong> Structured data for statistical analysis</li>
+                <li><strong>JSON:</strong> Hierarchical data structures</li>
+                <li><strong>SQL Dumps:</strong> Database exports for direct import</li>
+                <li><strong>API Access:</strong> Programmatic access for large-scale research (limited availability)</li>
+            </ul>
+
+            <h2>Processing Time</h2>
+            <p>
+                Data access requests are typically processed within 5-10 business days. Complex requests 
+                or requests requiring additional review may take longer. You will receive email confirmation 
+                when your request is approved and data access is granted.
+            </p>
+
+            <h2>Support</h2>
+            <p>
+                For questions about database access, data formats, or research support, please contact:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:research@toxicapps.com" style="color: var(--primary-blue);">research@toxicapps.com</a><br>
+                <strong>Subject:</strong> Database Access Inquiry
+            </p>
+
+            <h2>Related Resources</h2>
+            <ul>
+                <li><a href="data-usage-policy.html" style="color: var(--primary-blue);">Data Usage Policy</a></li>
+                <li><a href="research-ethics.html" style="color: var(--primary-blue);">Research Ethics</a></li>
+                <li><a href="research-methodology.html" style="color: var(--primary-blue);">Research Methodology</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-text">Application Research Institute</span>
+                    </div>
+                    <p>Advancing scientific understanding of application behaviors through rigorous research.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#research">Research Areas</a></li>
+                        <li><a href="index.html#publications">Publications</a></li>
+                        <li><a href="index.html#data">Data & Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Institute</h4>
+                    <ul>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="research-ethics.html">Research Ethics</a></li>
+                        <li><a href="data-usage-policy.html">Data Usage Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Application Research Institute. All rights reserved. | Non-profit research organization.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

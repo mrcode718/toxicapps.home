@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Research Tools - Application Research Institute">
+    <title>Research Tools - Application Research Institute</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .page-content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) var(--spacing-md);
+            margin-top: 100px;
+        }
+        .page-content h1 {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+            color: var(--text-primary);
+        }
+        .page-content h2 {
+            font-family: var(--font-heading);
+            font-size: 1.75rem;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-sm);
+            color: var(--text-primary);
+        }
+        .page-content h3 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            margin-top: var(--spacing-md);
+            margin-bottom: var(--spacing-xs);
+            color: var(--text-primary);
+        }
+        .page-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: var(--spacing-md);
+        }
+        .page-content ul {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: var(--spacing-md);
+            padding-left: var(--spacing-md);
+        }
+        .page-content li {
+            margin-bottom: var(--spacing-xs);
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: var(--spacing-lg);
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .tool-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+            transition: all 0.3s ease;
+        }
+        .tool-card:hover {
+            border-color: var(--border-accent);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+        .tool-card h3 {
+            margin-top: 0;
+            color: var(--primary-blue);
+        }
+        .tool-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        .code-block {
+            background: var(--bg-tertiary);
+            padding: var(--spacing-sm);
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin: var(--spacing-sm) 0;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <span class="logo-text">Application Research Institute</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#research">Research</a></li>
+                    <li><a href="index.html#publications">Publications</a></li>
+                    <li><a href="index.html#data">Data</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="page-content">
+            <a href="index.html#data" class="back-link">← Back to Research Data & Tools</a>
+            
+            <h1>Research Tools</h1>
+            <p>
+                The Application Research Institute develops and maintains open-source research tools for analyzing 
+                application behaviors, permission patterns, and network communications. These tools are available 
+                for researchers, academic institutions, and the broader research community.
+            </p>
+
+            <h2>Available Tools</h2>
+
+            <div class="tool-card">
+                <h3>AppPermission Analyzer</h3>
+                <div class="tool-meta">
+                    <strong>Language:</strong> Python | <strong>License:</strong> MIT | <strong>Version:</strong> 2.1.0
+                </div>
+                <p>
+                    A comprehensive tool for analyzing application permission requests and patterns. Supports 
+                    multiple platforms and provides detailed reports on permission usage, over-permissioning 
+                    detection, and category-based analysis.
+                </p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Automated permission extraction from application metadata</li>
+                    <li>Pattern detection and anomaly identification</li>
+                    <li>Category-based permission analysis</li>
+                    <li>Export to multiple formats (CSV, JSON, PDF)</li>
+                    <li>Batch processing capabilities</li>
+                </ul>
+                <p><strong>Installation:</strong></p>
+                <div class="code-block">pip install apppermission-analyzer</div>
+                <p><strong>Repository:</strong> <a href="https://github.com/toxicapps/apppermission-analyzer" style="color: var(--primary-blue);">GitHub</a></p>
+            </div>
+
+            <div class="tool-card">
+                <h3>Network Traffic Inspector</h3>
+                <div class="tool-meta">
+                    <strong>Language:</strong> Python | <strong>License:</strong> Apache 2.0 | <strong>Version:</strong> 1.8.3
+                </div>
+                <p>
+                    Advanced network traffic analysis tool for examining application communication patterns, 
+                    protocol usage, and data transmission behaviors. Supports real-time and offline analysis.
+                </p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Packet capture and analysis</li>
+                    <li>Protocol identification and classification</li>
+                    <li>Encryption detection and assessment</li>
+                    <li>Third-party endpoint mapping</li>
+                    <li>Data flow visualization</li>
+                    <li>Export capabilities for further analysis</li>
+                </ul>
+                <p><strong>Installation:</strong></p>
+                <div class="code-block">pip install network-traffic-inspector</div>
+                <p><strong>Repository:</strong> <a href="https://github.com/toxicapps/network-traffic-inspector" style="color: var(--primary-blue);">GitHub</a></p>
+            </div>
+
+            <div class="tool-card">
+                <h3>Privacy Policy Parser</h3>
+                <div class="tool-meta">
+                    <strong>Language:</strong> Python | <strong>License:</strong> MIT | <strong>Version:</strong> 1.5.2
+                </div>
+                <p>
+                    Automated tool for parsing and analyzing privacy policies. Extracts key information about 
+                    data collection, sharing practices, and user rights from privacy policy documents.
+                </p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Automated privacy policy extraction</li>
+                    <li>Key information identification</li>
+                    <li>Readability analysis</li>
+                    <li>Compliance checking</li>
+                    <li>Comparative analysis across policies</li>
+                </ul>
+                <p><strong>Installation:</strong></p>
+                <div class="code-block">pip install privacy-policy-parser</div>
+                <p><strong>Repository:</strong> <a href="https://github.com/toxicapps/privacy-policy-parser" style="color: var(--primary-blue);">GitHub</a></p>
+            </div>
+
+            <div class="tool-card">
+                <h3>AppBehavior Tracker</h3>
+                <div class="tool-meta">
+                    <strong>Language:</strong> JavaScript/Node.js | <strong>License:</strong> MIT | <strong>Version:</strong> 3.0.1
+                </div>
+                <p>
+                    Tool for analyzing application behaviors, tracking mechanisms, and user interaction patterns. 
+                    Designed for web application analysis with support for browser-based testing.
+                </p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Behavioral pattern detection</li>
+                    <li>Tracking mechanism identification</li>
+                    <li>User interaction analysis</li>
+                    <li>Data collection point mapping</li>
+                    <li>Automated testing capabilities</li>
+                </ul>
+                <p><strong>Installation:</strong></p>
+                <div class="code-block">npm install appbehavior-tracker</div>
+                <p><strong>Repository:</strong> <a href="https://github.com/toxicapps/appbehavior-tracker" style="color: var(--primary-blue);">GitHub</a></p>
+            </div>
+
+            <div class="tool-card">
+                <h3>Data Collection Analyzer</h3>
+                <div class="tool-meta">
+                    <strong>Language:</strong> Python | <strong>License:</strong> MIT | <strong>Version:</strong> 2.3.0
+                </div>
+                <p>
+                    Comprehensive analysis tool for examining data collection practices, identifying data 
+                    transmission endpoints, and analyzing data flow patterns in applications.
+                </p>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Data collection point identification</li>
+                    <li>Endpoint analysis and categorization</li>
+                    <li>Data flow visualization</li>
+                    <li>Privacy impact assessment</li>
+                    <li>Compliance checking</li>
+                </ul>
+                <p><strong>Installation:</strong></p>
+                <div class="code-block">pip install data-collection-analyzer</div>
+                <p><strong>Repository:</strong> <a href="https://github.com/toxicapps/data-collection-analyzer" style="color: var(--primary-blue);">GitHub</a></p>
+            </div>
+
+            <h2>Getting Started</h2>
+            <p>
+                All tools are available as open-source software with permissive licenses. To get started:
+            </p>
+            <ol>
+                <li>Review the tool documentation on GitHub</li>
+                <li>Install the tool using the provided package manager commands</li>
+                <li>Follow the quick start guides in the repository README</li>
+                <li>Join our community for support and collaboration</li>
+            </ol>
+
+            <h2>Contributing</h2>
+            <p>
+                We welcome contributions to our research tools! Contributions can include:
+            </p>
+            <ul>
+                <li>Bug fixes and improvements</li>
+                <li>New features and functionality</li>
+                <li>Documentation improvements</li>
+                <li>Test cases and quality assurance</li>
+                <li>Performance optimizations</li>
+            </ul>
+            <p>
+                Please see individual repository contribution guidelines for more information.
+            </p>
+
+            <h2>Support and Documentation</h2>
+            <p>
+                Each tool includes comprehensive documentation:
+            </p>
+            <ul>
+                <li>Installation and setup guides</li>
+                <li>API documentation</li>
+                <li>Usage examples and tutorials</li>
+                <li>FAQ and troubleshooting guides</li>
+                <li>Community forums and discussions</li>
+            </ul>
+
+            <h2>License Information</h2>
+            <p>
+                Our research tools are released under permissive open-source licenses (primarily MIT and Apache 2.0), 
+                allowing free use, modification, and distribution for both academic and commercial purposes. Please 
+                review individual tool licenses for specific terms.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                For questions about research tools, feature requests, or collaboration opportunities:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:research@toxicapps.com" style="color: var(--primary-blue);">research@toxicapps.com</a><br>
+                <strong>Subject:</strong> Research Tools Inquiry
+            </p>
+
+            <h2>Related Resources</h2>
+            <ul>
+                <li><a href="research-methodology.html" style="color: var(--primary-blue);">Research Methodology</a></li>
+                <li><a href="database-access.html" style="color: var(--primary-blue);">Database Access</a></li>
+                <li><a href="data-usage-policy.html" style="color: var(--primary-blue);">Data Usage Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-text">Application Research Institute</span>
+                    </div>
+                    <p>Advancing scientific understanding of application behaviors through rigorous research.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Research</h4>
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#research">Research Areas</a></li>
+                        <li><a href="index.html#publications">Publications</a></li>
+                        <li><a href="index.html#data">Data & Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Institute</h4>
+                    <ul>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="research-ethics.html">Research Ethics</a></li>
+                        <li><a href="data-usage-policy.html">Data Usage Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Application Research Institute. All rights reserved. | Non-profit research organization.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+
